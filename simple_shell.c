@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[], char *envp[])
 {
-	char cmd[100], command[100], *parameters[20];
+	char cmd[100], *parameters[20];
 	int status;
 
 
@@ -27,7 +27,7 @@ int main(int argc, char *argv[], char *envp[])
 		}
 		else
 		{
-			handle_command(command, parameters, envp);
+			handle_command(cmd, parameters, envp);
 		}
 	}
 	return (0);

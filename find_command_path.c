@@ -17,7 +17,6 @@ char *find_command_path(char *command)
 		if (access(command, X_OK) == 0)
 		{
 			strcpy(full_path, command);
-			free(full_path);
 			return (command);
 		}
 		else

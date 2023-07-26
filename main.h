@@ -8,7 +8,7 @@
 #include "sys/wait.h"
 #include "sys/stat.h"
 void read_command_1(char cmd[]);
-void read_command(char cmd[], char *par[]);
+void read_command(char *cmd, char *par[]);
 void type_prompt();
 char *find_command_path_1(char *command);
 char *find_command_path(char *command);
