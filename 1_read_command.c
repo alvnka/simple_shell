@@ -7,7 +7,7 @@
  * Return: void
  */
 
-void read_command_1(char cmd[], char *par[])
+void read_command_1(char cmd[])
 {
 	char line[1024];
 

@@ -10,11 +10,13 @@
 void handle_command_1(char *command, char **parameters, char **envp)
 {
 	char *full_path = find_command_path_1(command);
+	int ret;
 
 	if (full_path != NULL)
 	{
 		parameters[0] = NULL;
-		int ret = execve(full_path, parameters, envp);
+
+		ret = execve(full_path, parameters, envp);
 
 		if (ret == -1)
 		{
